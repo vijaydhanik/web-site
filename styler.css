@@ -1,7 +1,6 @@
 /*importing Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Playpen+Sans:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
@@ -68,6 +67,9 @@ button{
 }
 
 header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
     background-color: #3b141c;
 }
 header .navbar{
@@ -102,18 +104,24 @@ header .navbar .nav-menu{
     transition:0.3s ease;
 }
 /*-------------------------------------------------------*/
-main section .main-text{
-    background-color: #3b141c;
+.hero-section{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
 }
 
-.main-text .text{
-    color: #ccc;
+.section-content .hero-details .title{
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Miniver" ,sens-serif;
 }
-.main-text .top_text{/*--------*/
-    color: #f3961c;
-    font-family: "Pacifico", cursive;
-}
-.section1{
-    display: flex;
-    gap: 5px;
+
+.hero-section .hero-details .subtitle{
+    
 }
